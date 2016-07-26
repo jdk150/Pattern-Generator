@@ -266,7 +266,7 @@ class PseudoRandom(Pattern):
             density = input('What do you want the density of struts to be? (#struts/#rows or #struts/mesh) ').lower()
             h=0
             ints = np.array(['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'])
-            if density[-4:] == 'mesh':
+            if len(density) > 4 and density[-4:] == 'mesh':
                 if self.ind_param['height']//self.ind_param['pitch'] == self.ind_param['height']/self.ind_param['pitch']:
                     h = self.ind_param['height']//self.ind_param['pitch']
                 else:
@@ -277,7 +277,7 @@ class PseudoRandom(Pattern):
                     i += 1
                 i += 1
                 h = ''
-                while any(ints == density[i]):
+                while i < len(density) and any(ints == density[i]):
                     h += density[i]
                     i += 1
                 h = int(h)
