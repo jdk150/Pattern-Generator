@@ -11,7 +11,7 @@ class Pattern:
         #ask for the independant parameters
         height = int(input('What is the height of the mesh in nm? '))
         width = int(input('What is the width of the mesh in nm? '))
-        frame = int(input('How thick do you want the border for your mesh in nm?'))
+        frame = int(input('How thick do you want the border for your mesh in nm? '))
         slit_height = int(input('What is the slit height in nm? '))
         pitch = int(input('What is the pitch in nm? '))
         strut_width = int(input('What is the strut width in nm? '))
