@@ -160,3 +160,4 @@ class stp_File(File_Method):
         stpfile.write("ENDSEC;" + "\n")
         stpfile.write("END-ISO-10303-21;" + "\n")
         stpfile.close()
+
