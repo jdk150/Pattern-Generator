@@ -68,7 +68,7 @@ class stp_File(File_Method):
         while i < len(self.mesh):
             width = 1
             while i + width < len(self.mesh) and all(self.mesh[i] == self.mesh[i + width]):
-            width += 1
+                width += 1
             j = 0
             while j < len(self.mesh[i]):
                 height = 1
